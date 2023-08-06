@@ -12,6 +12,7 @@
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
 		71E3EC592A7F971700A24D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */; };
 		71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC672A7F990E00A24D7F /* AppRouter.swift */; };
+		71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		71E3EC582A7F971700A24D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71E3EC5A2A7F971700A24D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E3EC672A7F990E00A24D7F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Subscriber.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				71E3EC642A7F983A00A24D7F /* Application */,
+				71E3EC692A7F9B6E00A24D7F /* Common */,
+				71E3EC6A2A7F9B7800A24D7F /* Modules */,
 				71E3EC612A7F981D00A24D7F /* Sources */,
 				71E3EC632A7F983100A24D7F /* LaunchScreen */,
 				71E3EC602A7F97C800A24D7F /* SupportingFiles */,
@@ -118,6 +122,29 @@
 				71E3EC672A7F990E00A24D7F /* AppRouter.swift */,
 			);
 			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		71E3EC692A7F9B6E00A24D7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC6B2A7F9B8C00A24D7F /* Publisher + Subscriber */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71E3EC6A2A7F9B7800A24D7F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		71E3EC6B2A7F9B8C00A24D7F /* Publisher + Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */,
+			);
+			path = "Publisher + Subscriber";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
