@@ -28,6 +28,9 @@
 		71E3EC8B2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC7F2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift */; };
 		71E3EC8C2A7FA3E500A24D7F /* InitialScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC802A7FA3E500A24D7F /* InitialScenePresenterContract.swift */; };
 		71E3EC8D2A7FA3E500A24D7F /* InitialScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC812A7FA3E500A24D7F /* InitialScenePresenterService.swift */; };
+		71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */; };
+		71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC982A7FA62700A24D7F /* AppCore.swift */; };
+		71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC9B2A7FA68100A24D7F /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		71E3EC7F2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		71E3EC802A7FA3E500A24D7F /* InitialScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterContract.swift; sourceTree = "<group>"; };
 		71E3EC812A7FA3E500A24D7F /* InitialScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterService.swift; sourceTree = "<group>"; };
+		71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
+		71E3EC982A7FA62700A24D7F /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		71E3EC9B2A7FA68100A24D7F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,8 @@
 			children = (
 				71E3EC662A7F98FB00A24D7F /* AppRouter */,
 				71E3EC652A7F98F100A24D7F /* AppDelegate */,
+				71E3EC952A7FA5D200A24D7F /* AppCore */,
+				71E3EC9A2A7FA65B00A24D7F /* Utilities */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -264,6 +272,23 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		71E3EC952A7FA5D200A24D7F /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */,
+				71E3EC982A7FA62700A24D7F /* AppCore.swift */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		71E3EC9A2A7FA65B00A24D7F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC9B2A7FA68100A24D7F /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +364,7 @@
 				71E3EC702A7F9C1200A24D7F /* SelfExtractable.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71E3EC862A7FA3E500A24D7F /* InitialSceneInteractor.swift in Sources */,
+				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
 				71E3EC742A7F9CA100A24D7F /* NibLoadable.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
 				71E3EC872A7FA3E500A24D7F /* InitialSceneInteractorService.swift in Sources */,
@@ -349,8 +375,10 @@
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
+				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71E3EC822A7FA3E500A24D7F /* InitialScenePresenter.swift in Sources */,
+				71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */,
 				71E3EC722A7F9C8800A24D7F /* BaseViewController.swift in Sources */,
 				71E3EC8C2A7FA3E500A24D7F /* InitialScenePresenterContract.swift in Sources */,
 			);
