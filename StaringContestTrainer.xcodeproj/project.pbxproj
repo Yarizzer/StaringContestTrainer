@@ -37,6 +37,8 @@
 		71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */; };
 		71E3ECAC2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAB2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift */; };
 		71E3ECAE2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */; };
+		71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */; };
+		71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorkerType.swift; sourceTree = "<group>"; };
 		71E3ECAB2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorker.swift; sourceTree = "<group>"; };
 		71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
+		71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayer.swift; sourceTree = "<group>"; };
+		71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +328,8 @@
 		71E3EC9F2A7FAA0F00A24D7F /* CILayer */ = {
 			isa = PBXGroup;
 			children = (
+				71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */,
+				71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */,
 			);
 			path = CILayer;
 			sourceTree = "<group>";
@@ -442,8 +448,10 @@
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
+				71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */,
 				71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */,
 				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
+				71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */,
 				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71E3EC822A7FA3E500A24D7F /* InitialScenePresenter.swift in Sources */,

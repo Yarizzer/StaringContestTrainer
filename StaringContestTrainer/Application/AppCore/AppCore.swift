@@ -9,12 +9,12 @@ class AppCore {
     static let shared = AppCore()
     
     private init() {
-//        self.appUIL = AppUILayer()
-//        self.appCIL = AppCIProcessorLayer()
+        self.appUIL = AppUILayer()
+        self.appCIL = AppCIProcessorLayer()
     }
     
-//    private let appUIL: AppUILayerType
-//    private let appCIL: AppCIProcessorLayerType
+    private let appUIL: AppUILayerType
+    private let appCIL: AppCIProcessorLayerType
 }
 
 extension AppCore: AppCoreSessionType {
@@ -27,9 +27,9 @@ extension AppCore: AppCoreSessionType {
 }
 
 extension AppCore: AppCoreUILayerType {
-//    var uiLayer: AppUILayerType { appUIL }
+    var uiLayer: AppUILayerType { appUIL }
 }
 
 extension AppCore: AppCoreCIProcessorLayerType {
-//    var ciProcessorLayer: AppCIProcessorLayerType { appCIL }
+    var ciProcessorLayer: AppCIProcessorLayerType { appCIL }
 }
