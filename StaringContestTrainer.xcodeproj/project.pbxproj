@@ -31,6 +31,12 @@
 		71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */; };
 		71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC982A7FA62700A24D7F /* AppCore.swift */; };
 		71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC9B2A7FA68100A24D7F /* Logger.swift */; };
+		71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECA02A7FAAB700A24D7F /* AppUILayer.swift */; };
+		71E3ECA32A7FAAF400A24D7F /* AppUILayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECA22A7FAAF400A24D7F /* AppUILayerType.swift */; };
+		71E3ECA82A7FAB4100A24D7F /* AppUILayerStyleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECA72A7FAB4100A24D7F /* AppUILayerStyleWorker.swift */; };
+		71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */; };
+		71E3ECAC2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAB2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift */; };
+		71E3ECAE2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
 		71E3EC982A7FA62700A24D7F /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		71E3EC9B2A7FA68100A24D7F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		71E3ECA02A7FAAB700A24D7F /* AppUILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayer.swift; sourceTree = "<group>"; };
+		71E3ECA22A7FAAF400A24D7F /* AppUILayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerType.swift; sourceTree = "<group>"; };
+		71E3ECA72A7FAB4100A24D7F /* AppUILayerStyleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorker.swift; sourceTree = "<group>"; };
+		71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleWorkerType.swift; sourceTree = "<group>"; };
+		71E3ECAB2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorker.swift; sourceTree = "<group>"; };
+		71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +287,7 @@
 		71E3EC952A7FA5D200A24D7F /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
+				71E3EC9D2A7FA9F200A24D7F /* Layers */,
 				71E3EC962A7FA5EF00A24D7F /* AppCoreContract.swift */,
 				71E3EC982A7FA62700A24D7F /* AppCore.swift */,
 			);
@@ -287,6 +300,59 @@
 				71E3EC9B2A7FA68100A24D7F /* Logger.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71E3EC9D2A7FA9F200A24D7F /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC9F2A7FAA0F00A24D7F /* CILayer */,
+				71E3EC9E2A7FA9FD00A24D7F /* UILayer */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		71E3EC9E2A7FA9FD00A24D7F /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECA42A7FAB0500A24D7F /* Workers */,
+				71E3ECA02A7FAAB700A24D7F /* AppUILayer.swift */,
+				71E3ECA22A7FAAF400A24D7F /* AppUILayerType.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		71E3EC9F2A7FAA0F00A24D7F /* CILayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CILayer;
+			sourceTree = "<group>";
+		};
+		71E3ECA42A7FAB0500A24D7F /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECA62A7FAB1800A24D7F /* Style */,
+				71E3ECA52A7FAB1200A24D7F /* Device */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		71E3ECA52A7FAB1200A24D7F /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECAB2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift */,
+				71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		71E3ECA62A7FAB1800A24D7F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECA72A7FAB4100A24D7F /* AppUILayerStyleWorker.swift */,
+				71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +428,7 @@
 			files = (
 				71E3EC882A7FA3E500A24D7F /* InitialSceneInteractorContract.swift in Sources */,
 				71E3EC702A7F9C1200A24D7F /* SelfExtractable.swift in Sources */,
+				71E3ECA32A7FAAF400A24D7F /* AppUILayerType.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71E3EC862A7FA3E500A24D7F /* InitialSceneInteractor.swift in Sources */,
 				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
@@ -375,12 +442,17 @@
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
+				71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */,
+				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
 				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71E3EC822A7FA3E500A24D7F /* InitialScenePresenter.swift in Sources */,
 				71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */,
+				71E3ECA82A7FAB4100A24D7F /* AppUILayerStyleWorker.swift in Sources */,
 				71E3EC722A7F9C8800A24D7F /* BaseViewController.swift in Sources */,
 				71E3EC8C2A7FA3E500A24D7F /* InitialScenePresenterContract.swift in Sources */,
+				71E3ECAC2A7FAC3E00A24D7F /* AppUILayerDeviceWorker.swift in Sources */,
+				71E3ECAE2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
