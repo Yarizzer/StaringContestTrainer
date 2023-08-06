@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC492A7F971600A24D7F /* AppDelegate.swift */; };
-		71E3EC4C2A7F971600A24D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC4B2A7F971600A24D7F /* SceneDelegate.swift */; };
-		71E3EC4E2A7F971600A24D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC4D2A7F971600A24D7F /* ViewController.swift */; };
-		71E3EC512A7F971600A24D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC4F2A7F971600A24D7F /* Main.storyboard */; };
 		71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */; };
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
 		71E3EC592A7F971700A24D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */; };
@@ -19,9 +16,6 @@
 /* Begin PBXFileReference section */
 		71E3EC462A7F971600A24D7F /* StaringContestTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaringContestTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3EC492A7F971600A24D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71E3EC4B2A7F971600A24D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71E3EC4D2A7F971600A24D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71E3EC502A7F971600A24D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E3EC532A7F971600A24D7F /* StaringContestTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaringContestTrainer.xcdatamodel; sourceTree = "<group>"; };
 		71E3EC552A7F971700A24D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E3EC582A7F971700A24D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,16 +52,53 @@
 		71E3EC482A7F971600A24D7F /* StaringContestTrainer */ = {
 			isa = PBXGroup;
 			children = (
-				71E3EC492A7F971600A24D7F /* AppDelegate.swift */,
-				71E3EC4B2A7F971600A24D7F /* SceneDelegate.swift */,
-				71E3EC4D2A7F971600A24D7F /* ViewController.swift */,
-				71E3EC4F2A7F971600A24D7F /* Main.storyboard */,
-				71E3EC552A7F971700A24D7F /* Assets.xcassets */,
-				71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */,
-				71E3EC5A2A7F971700A24D7F /* Info.plist */,
-				71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */,
+				71E3EC642A7F983A00A24D7F /* Application */,
+				71E3EC612A7F981D00A24D7F /* Sources */,
+				71E3EC632A7F983100A24D7F /* LaunchScreen */,
+				71E3EC602A7F97C800A24D7F /* SupportingFiles */,
+				71E3EC622A7F982A00A24D7F /* Database */,
 			);
 			path = StaringContestTrainer;
+			sourceTree = "<group>";
+		};
+		71E3EC602A7F97C800A24D7F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC5A2A7F971700A24D7F /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		71E3EC612A7F981D00A24D7F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC552A7F971700A24D7F /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		71E3EC622A7F982A00A24D7F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		71E3EC632A7F983100A24D7F /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		71E3EC642A7F983A00A24D7F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC492A7F971600A24D7F /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +161,6 @@
 			files = (
 				71E3EC592A7F971700A24D7F /* LaunchScreen.storyboard in Resources */,
 				71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */,
-				71E3EC512A7F971600A24D7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E3EC4E2A7F971600A24D7F /* ViewController.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
-				71E3EC4C2A7F971600A24D7F /* SceneDelegate.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71E3EC4F2A7F971600A24D7F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71E3EC502A7F971600A24D7F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StaringContestTrainer/Info.plist;
+				INFOPLIST_FILE = StaringContestTrainer/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StaringContestTrainer/Info.plist;
+				INFOPLIST_FILE = StaringContestTrainer/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
