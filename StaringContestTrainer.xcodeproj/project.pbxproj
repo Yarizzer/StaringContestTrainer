@@ -13,6 +13,7 @@
 		71E3EC592A7F971700A24D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC572A7F971700A24D7F /* LaunchScreen.storyboard */; };
 		71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC672A7F990E00A24D7F /* AppRouter.swift */; };
 		71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */; };
+		71E3EC702A7F9C1200A24D7F /* SelfExtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC6F2A7F9C1200A24D7F /* SelfExtractable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		71E3EC5A2A7F971700A24D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E3EC672A7F990E00A24D7F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Subscriber.swift"; sourceTree = "<group>"; };
+		71E3EC6F2A7F9C1200A24D7F /* SelfExtractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfExtractable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		71E3EC692A7F9B6E00A24D7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71E3EC6E2A7F9BE100A24D7F /* SelfExtractor */,
 				71E3EC6B2A7F9B8C00A24D7F /* Publisher + Subscriber */,
 			);
 			path = Common;
@@ -145,6 +148,14 @@
 				71E3EC6C2A7F9BA500A24D7F /* Publisher + Subscriber.swift */,
 			);
 			path = "Publisher + Subscriber";
+			sourceTree = "<group>";
+		};
+		71E3EC6E2A7F9BE100A24D7F /* SelfExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				71E3EC6F2A7F9C1200A24D7F /* SelfExtractable.swift */,
+			);
+			path = SelfExtractor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E3EC702A7F9C1200A24D7F /* SelfExtractable.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
