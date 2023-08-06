@@ -39,6 +39,11 @@
 		71E3ECAE2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */; };
 		71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */; };
 		71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */; };
+		71E3ECB52A7FAE5900A24D7F /* AppCoreDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB42A7FAE5900A24D7F /* AppCoreDataLayer.swift */; };
+		71E3ECB72A7FAF9C00A24D7F /* AppCoreDataLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB62A7FAF9C00A24D7F /* AppCoreDataLayerType.swift */; };
+		71E3ECBA2A7FB0DF00A24D7F /* Training+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB82A7FB0DF00A24D7F /* Training+CoreDataClass.swift */; };
+		71E3ECBB2A7FB0DF00A24D7F /* Training+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECB92A7FB0DF00A24D7F /* Training+CoreDataProperties.swift */; };
+		71E3ECC12A7FB15400A24D7F /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3ECC02A7FB15400A24D7F /* TrainingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +81,11 @@
 		71E3ECAD2A7FAC5800A24D7F /* AppUILayerDeviceWorkerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceWorkerType.swift; sourceTree = "<group>"; };
 		71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayer.swift; sourceTree = "<group>"; };
 		71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCIProcessorLayerType.swift; sourceTree = "<group>"; };
+		71E3ECB42A7FAE5900A24D7F /* AppCoreDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreDataLayer.swift; sourceTree = "<group>"; };
+		71E3ECB62A7FAF9C00A24D7F /* AppCoreDataLayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreDataLayerType.swift; sourceTree = "<group>"; };
+		71E3ECB82A7FB0DF00A24D7F /* Training+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E3ECB92A7FB0DF00A24D7F /* Training+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E3ECC02A7FB15400A24D7F /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 		71E3EC622A7F982A00A24D7F /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				71E3ECBC2A7FB0E400A24D7F /* Entities */,
 				71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */,
 			);
 			path = Database;
@@ -309,6 +320,7 @@
 		71E3EC9D2A7FA9F200A24D7F /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				71E3ECB32A7FADA400A24D7F /* CoreDataLayer */,
 				71E3EC9F2A7FAA0F00A24D7F /* CILayer */,
 				71E3EC9E2A7FA9FD00A24D7F /* UILayer */,
 			);
@@ -359,6 +371,49 @@
 				71E3ECA92A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		71E3ECB32A7FADA400A24D7F /* CoreDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECBE2A7FB13700A24D7F /* Models */,
+				71E3ECB42A7FAE5900A24D7F /* AppCoreDataLayer.swift */,
+				71E3ECB62A7FAF9C00A24D7F /* AppCoreDataLayerType.swift */,
+			);
+			path = CoreDataLayer;
+			sourceTree = "<group>";
+		};
+		71E3ECBC2A7FB0E400A24D7F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECBD2A7FB0EC00A24D7F /* Training */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		71E3ECBD2A7FB0EC00A24D7F /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECB82A7FB0DF00A24D7F /* Training+CoreDataClass.swift */,
+				71E3ECB92A7FB0DF00A24D7F /* Training+CoreDataProperties.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		71E3ECBE2A7FB13700A24D7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECBF2A7FB13D00A24D7F /* Training */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71E3ECBF2A7FB13D00A24D7F /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				71E3ECC02A7FB15400A24D7F /* TrainingModel.swift */,
+			);
+			path = Training;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,12 +495,16 @@
 				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
 				71E3EC742A7F9CA100A24D7F /* NibLoadable.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
+				71E3ECBB2A7FB0DF00A24D7F /* Training+CoreDataProperties.swift in Sources */,
+				71E3ECC12A7FB15400A24D7F /* TrainingModel.swift in Sources */,
 				71E3EC872A7FA3E500A24D7F /* InitialSceneInteractorService.swift in Sources */,
 				71E3EC892A7FA3E500A24D7F /* InitialSceneViewModel.swift in Sources */,
 				71E3EC8B2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift in Sources */,
 				71E3EC832A7FA3E500A24D7F /* InitialSceneRouterContract.swift in Sources */,
 				71E3EC8D2A7FA3E500A24D7F /* InitialScenePresenterService.swift in Sources */,
+				71E3ECB72A7FAF9C00A24D7F /* AppCoreDataLayerType.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
+				71E3ECB52A7FAE5900A24D7F /* AppCoreDataLayer.swift in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
 				71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */,
@@ -453,6 +512,7 @@
 				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
 				71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */,
 				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
+				71E3ECBA2A7FB0DF00A24D7F /* Training+CoreDataClass.swift in Sources */,
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71E3EC822A7FA3E500A24D7F /* InitialScenePresenter.swift in Sources */,
 				71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */,
