@@ -19,6 +19,12 @@ class InitialSceneViewController: BaseViewController<InitialSceneInteractable> {
 	private func setup() {
 		interactor?.makeRequest(requestType: .initialSetup)
 	}
+    
+    #warning("Test section")
+    @IBAction private func startButtonAction(_ sender: UIButton) {
+        interactor?.makeRequest(requestType: .routeToMain)
+    }
+    #warning("Test section")
 }
 
 extension InitialSceneViewController: InitialSceneViewControllerType {

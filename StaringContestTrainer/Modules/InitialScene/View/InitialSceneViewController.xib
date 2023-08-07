@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,30 +19,23 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-4Z-6La" userLabel="Back View">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0S-sf-IKf" userLabel="Header View">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-2E-fKU">
-                                    <rect key="frame" x="40" y="20.5" width="240" height="19.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMS-iL-jjP">
+                            <rect key="frame" x="128" y="252" width="64" height="64"/>
                             <constraints>
-                                <constraint firstItem="bxU-2E-fKU" firstAttribute="centerX" secondItem="F0S-sf-IKf" secondAttribute="centerX" id="FeU-h8-Iuw"/>
-                                <constraint firstAttribute="height" constant="60" id="LeU-EW-ZYM"/>
-                                <constraint firstItem="bxU-2E-fKU" firstAttribute="centerY" secondItem="F0S-sf-IKf" secondAttribute="centerY" id="Wud-nf-FNa"/>
-                                <constraint firstItem="bxU-2E-fKU" firstAttribute="width" secondItem="F0S-sf-IKf" secondAttribute="width" multiplier="3:4" id="dBO-sb-HH8"/>
+                                <constraint firstAttribute="width" secondItem="BMS-iL-jjP" secondAttribute="height" id="Ymg-RW-DI0"/>
                             </constraints>
-                        </view>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                            <connections>
+                                <action selector="startButtonAction:" destination="-1" eventType="touchUpInside" id="AEz-iG-6gY"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>
-                        <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="VHM-NN-eqW"/>
-                        <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="jAA-Jb-VfW"/>
+                        <constraint firstItem="BMS-iL-jjP" firstAttribute="width" secondItem="zRH-4Z-6La" secondAttribute="width" multiplier="1:5" id="Xeg-Qm-Hz6"/>
+                        <constraint firstItem="BMS-iL-jjP" firstAttribute="centerX" secondItem="zRH-4Z-6La" secondAttribute="centerX" id="hBP-ae-CfY"/>
+                        <constraint firstItem="BMS-iL-jjP" firstAttribute="centerY" secondItem="zRH-4Z-6La" secondAttribute="centerY" id="s3a-iT-C1w"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
@@ -60,9 +53,4 @@
             <point key="canvasLocation" x="866.25" y="421.47887323943661"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

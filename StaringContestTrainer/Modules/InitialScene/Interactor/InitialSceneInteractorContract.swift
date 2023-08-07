@@ -13,5 +13,6 @@ protocol InitialSceneInteractable {
 struct InitialSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
+        case routeToMain
 	}
 }
