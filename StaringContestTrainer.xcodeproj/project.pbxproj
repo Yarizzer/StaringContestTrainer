@@ -56,6 +56,7 @@
 		71EC1E452A80AFC300EE1950 /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC1E392A80AFC300EE1950 /* MainSceneViewControllerContract.swift */; };
 		71EC1E462A80AFC300EE1950 /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC1E3A2A80AFC300EE1950 /* MainScenePresenterContract.swift */; };
 		71EC1E472A80AFC300EE1950 /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC1E3B2A80AFC300EE1950 /* MainScenePresenterService.swift */; };
+		71EC1E522A80B43800EE1950 /* BlurTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC1E512A80B43800EE1950 /* BlurTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		71EC1E392A80AFC300EE1950 /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		71EC1E3A2A80AFC300EE1950 /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
 		71EC1E3B2A80AFC300EE1950 /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
+		71EC1E512A80B43800EE1950 /* BlurTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 		71E3EC692A7F9B6E00A24D7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71EC1E4F2A80B34A00EE1950 /* TransitionAnimators */,
 				71E3EC6E2A7F9BE100A24D7F /* SelfExtractor */,
 				71E3EC6B2A7F9B8C00A24D7F /* Publisher + Subscriber */,
 				71E3EC712A7F9C8800A24D7F /* BaseViewController.swift */,
@@ -516,6 +519,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		71EC1E4F2A80B34A00EE1950 /* TransitionAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				71EC1E512A80B43800EE1950 /* BlurTransitionAnimator.swift */,
+			);
+			path = TransitionAnimators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -626,6 +637,7 @@
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71EC1E3E2A80AFC300EE1950 /* MainSceneRouter.swift in Sources */,
 				71E3EC822A7FA3E500A24D7F /* InitialScenePresenter.swift in Sources */,
+				71EC1E522A80B43800EE1950 /* BlurTransitionAnimator.swift in Sources */,
 				71E3EC972A7FA5EF00A24D7F /* AppCoreContract.swift in Sources */,
 				71E3ECA82A7FAB4100A24D7F /* AppUILayerStyleWorker.swift in Sources */,
 				71E3EC722A7F9C8800A24D7F /* BaseViewController.swift in Sources */,

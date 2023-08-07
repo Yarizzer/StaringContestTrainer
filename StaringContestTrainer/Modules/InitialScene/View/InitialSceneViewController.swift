@@ -30,6 +30,16 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
 	}
 }
 
+extension InitialSceneViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        BlurTransitionAnimator()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        BlurTransitionAnimator()
+    }
+}
+
 extension InitialSceneViewController {
 	private struct Constants {
 		
