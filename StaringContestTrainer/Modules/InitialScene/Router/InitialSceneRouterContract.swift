@@ -8,6 +8,6 @@
 
 struct InitialSceneRoutableContractData {
 	enum InitialSceneRoutableSceneType {
-		case testScene
+		case mainScene
 	}
 }
