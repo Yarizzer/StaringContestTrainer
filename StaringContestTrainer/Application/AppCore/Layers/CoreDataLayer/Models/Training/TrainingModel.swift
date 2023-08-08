@@ -14,7 +14,7 @@ struct TrainingModel {
         self.finalImage = data.finalImage
     }
     
-    private var created: Date
-    private var finished: Date
-    private var finalImage: Data
+    let created: Date
+    let finished: Date
+    let finalImage: Data
 }

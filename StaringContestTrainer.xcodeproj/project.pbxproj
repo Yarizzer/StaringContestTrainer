@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7125AFF02A829DBA0048EC0A /* TrainingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */; };
+		7125AFF12A829DBA0048EC0A /* TrainingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */; };
+		7125AFF32A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */; };
 		71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */; };
 		71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A8A2A821C5C002BDF0B /* ShowListButton.swift */; };
 		71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A902A824DAF002BDF0B /* TrainingListView.swift */; };
@@ -67,6 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCell.swift; sourceTree = "<group>"; };
+		7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingListTableViewCell.xib; sourceTree = "<group>"; };
+		7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
 		71790A8A2A821C5C002BDF0B /* ShowListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListButton.swift; sourceTree = "<group>"; };
 		71790A902A824DAF002BDF0B /* TrainingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListView.swift; sourceTree = "<group>"; };
@@ -139,6 +145,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7125AFEA2A829D790048EC0A /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				7125AFEB2A829D870048EC0A /* Cell */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		7125AFEB2A829D870048EC0A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7125AFED2A829D940048EC0A /* ViewModel */,
+				7125AFEC2A829D8F0048EC0A /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7125AFEC2A829D8F0048EC0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */,
+				7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7125AFED2A829D940048EC0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		71790A852A821B92002BDF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +231,7 @@
 		71790A8F2A824D5C002BDF0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7125AFEA2A829D790048EC0A /* Elements */,
 				71790A902A824DAF002BDF0B /* TrainingListView.swift */,
 			);
 			path = View;
@@ -688,6 +729,7 @@
 			files = (
 				71E3EC8A2A7FA3E500A24D7F /* InitialSceneViewController.xib in Resources */,
 				71E3EC592A7F971700A24D7F /* LaunchScreen.storyboard in Resources */,
+				7125AFF12A829DBA0048EC0A /* TrainingListTableViewCell.xib in Resources */,
 				71EC1E442A80AFC300EE1950 /* MainSceneViewController.xib in Resources */,
 				71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */,
 			);
@@ -729,12 +771,14 @@
 				71EC1E462A80AFC300EE1950 /* MainScenePresenterContract.swift in Sources */,
 				71EC1E422A80AFC300EE1950 /* MainSceneInteractorContract.swift in Sources */,
 				71E3ECB72A7FAF9C00A24D7F /* AppCoreDataLayerType.swift in Sources */,
+				7125AFF02A829DBA0048EC0A /* TrainingListTableViewCell.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3ECB52A7FAE5900A24D7F /* AppCoreDataLayer.swift in Sources */,
 				71790A972A824EB7002BDF0B /* TableViewProviderViewModel.swift in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71EC1E3C2A80AFC300EE1950 /* MainScenePresenter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
+				7125AFF32A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift in Sources */,
 				71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */,
 				71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */,
 				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
