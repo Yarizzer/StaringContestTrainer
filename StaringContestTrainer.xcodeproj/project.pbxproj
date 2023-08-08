@@ -10,6 +10,9 @@
 		71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */; };
 		71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A8A2A821C5C002BDF0B /* ShowListButton.swift */; };
 		71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A902A824DAF002BDF0B /* TrainingListView.swift */; };
+		71790A942A824E3E002BDF0B /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A932A824E3E002BDF0B /* TableViewProvider.swift */; };
+		71790A972A824EB7002BDF0B /* TableViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A962A824EB7002BDF0B /* TableViewProviderViewModel.swift */; };
+		71790A992A824EDF002BDF0B /* TableViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A982A824EDF002BDF0B /* TableViewProviderType.swift */; };
 		71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC492A7F971600A24D7F /* AppDelegate.swift */; };
 		71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */; };
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
 		71790A8A2A821C5C002BDF0B /* ShowListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListButton.swift; sourceTree = "<group>"; };
 		71790A902A824DAF002BDF0B /* TrainingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListView.swift; sourceTree = "<group>"; };
+		71790A932A824E3E002BDF0B /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		71790A962A824EB7002BDF0B /* TableViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderViewModel.swift; sourceTree = "<group>"; };
+		71790A982A824EDF002BDF0B /* TableViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderType.swift; sourceTree = "<group>"; };
 		71E3EC462A7F971600A24D7F /* StaringContestTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaringContestTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3EC492A7F971600A24D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E3EC532A7F971600A24D7F /* StaringContestTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaringContestTrainer.xcdatamodel; sourceTree = "<group>"; };
@@ -187,6 +193,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		71790A922A824E11002BDF0B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				71790A952A824E9F002BDF0B /* Protocols */,
+				71790A932A824E3E002BDF0B /* TableViewProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		71790A952A824E9F002BDF0B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				71790A962A824EB7002BDF0B /* TableViewProviderViewModel.swift */,
+				71790A982A824EDF002BDF0B /* TableViewProviderType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		71E3EC3D2A7F971600A24D7F = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +304,7 @@
 		71E3EC692A7F9B6E00A24D7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71790A922A824E11002BDF0B /* Providers */,
 				71790A852A821B92002BDF0B /* Extensions */,
 				71E583DB2A811DDB0039880B /* Elements */,
 				71EC1E4F2A80B34A00EE1950 /* TransitionAnimators */,
@@ -678,6 +703,7 @@
 				71E3EC702A7F9C1200A24D7F /* SelfExtractable.swift in Sources */,
 				71EC1E472A80AFC300EE1950 /* MainScenePresenterService.swift in Sources */,
 				71E3ECA32A7FAAF400A24D7F /* AppUILayerType.swift in Sources */,
+				71790A942A824E3E002BDF0B /* TableViewProvider.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */,
 				71E3EC862A7FA3E500A24D7F /* InitialSceneInteractor.swift in Sources */,
@@ -693,6 +719,7 @@
 				71EC1E412A80AFC300EE1950 /* MainSceneInteractorService.swift in Sources */,
 				71E3EC872A7FA3E500A24D7F /* InitialSceneInteractorService.swift in Sources */,
 				71E3EC892A7FA3E500A24D7F /* InitialSceneViewModel.swift in Sources */,
+				71790A992A824EDF002BDF0B /* TableViewProviderType.swift in Sources */,
 				71E3EC8B2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift in Sources */,
 				71E3EC832A7FA3E500A24D7F /* InitialSceneRouterContract.swift in Sources */,
 				71E3EC8D2A7FA3E500A24D7F /* InitialScenePresenterService.swift in Sources */,
@@ -701,6 +728,7 @@
 				71E3ECB72A7FAF9C00A24D7F /* AppCoreDataLayerType.swift in Sources */,
 				71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */,
 				71E3ECB52A7FAE5900A24D7F /* AppCoreDataLayer.swift in Sources */,
+				71790A972A824EB7002BDF0B /* TableViewProviderViewModel.swift in Sources */,
 				71E3EC842A7FA3E500A24D7F /* InitialSceneRouter.swift in Sources */,
 				71EC1E3C2A80AFC300EE1950 /* MainScenePresenter.swift in Sources */,
 				71E3EC682A7F990E00A24D7F /* AppRouter.swift in Sources */,
