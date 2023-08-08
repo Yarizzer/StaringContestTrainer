@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */; };
 		71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A8A2A821C5C002BDF0B /* ShowListButton.swift */; };
+		71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A902A824DAF002BDF0B /* TrainingListView.swift */; };
 		71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC492A7F971600A24D7F /* AppDelegate.swift */; };
 		71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */; };
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
 		71790A8A2A821C5C002BDF0B /* ShowListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListButton.swift; sourceTree = "<group>"; };
+		71790A902A824DAF002BDF0B /* TrainingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListView.swift; sourceTree = "<group>"; };
 		71E3EC462A7F971600A24D7F /* StaringContestTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaringContestTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3EC492A7F971600A24D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E3EC532A7F971600A24D7F /* StaringContestTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaringContestTrainer.xcdatamodel; sourceTree = "<group>"; };
@@ -151,6 +153,38 @@
 				71790A8A2A821C5C002BDF0B /* ShowListButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		71790A8C2A824D41002BDF0B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				71790A8D2A824D4B002BDF0B /* ListView */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		71790A8D2A824D4B002BDF0B /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				71790A8E2A824D54002BDF0B /* ViewModel */,
+				71790A8F2A824D5C002BDF0B /* View */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		71790A8E2A824D54002BDF0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71790A8F2A824D5C002BDF0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71790A902A824DAF002BDF0B /* TrainingListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		71E3EC3D2A7F971600A24D7F = {
@@ -497,6 +531,7 @@
 		71EC1E482A80AFD300EE1950 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				71790A8C2A824D41002BDF0B /* Elements */,
 				71EC1E332A80AFC300EE1950 /* MainSceneViewController.swift */,
 				71EC1E382A80AFC300EE1950 /* MainSceneViewController.xib */,
 				71EC1E392A80AFC300EE1950 /* MainSceneViewControllerContract.swift */,
@@ -644,6 +679,7 @@
 				71EC1E472A80AFC300EE1950 /* MainScenePresenterService.swift in Sources */,
 				71E3ECA32A7FAAF400A24D7F /* AppUILayerType.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
+				71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */,
 				71E3EC862A7FA3E500A24D7F /* InitialSceneInteractor.swift in Sources */,
 				71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */,
 				71EC1E402A80AFC300EE1950 /* MainSceneInteractor.swift in Sources */,
