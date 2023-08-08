@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */; };
+		71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A8A2A821C5C002BDF0B /* ShowListButton.swift */; };
 		71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC492A7F971600A24D7F /* AppDelegate.swift */; };
 		71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */; };
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
+		71790A8A2A821C5C002BDF0B /* ShowListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListButton.swift; sourceTree = "<group>"; };
 		71E3EC462A7F971600A24D7F /* StaringContestTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaringContestTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3EC492A7F971600A24D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E3EC532A7F971600A24D7F /* StaringContestTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaringContestTrainer.xcdatamodel; sourceTree = "<group>"; };
@@ -125,6 +129,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71790A852A821B92002BDF0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71790A862A821B9B002BDF0B /* NSObject */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71790A862A821B9B002BDF0B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		71790A892A821C46002BDF0B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				71790A8A2A821C5C002BDF0B /* ShowListButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		71E3EC3D2A7F971600A24D7F = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +246,8 @@
 		71E3EC692A7F9B6E00A24D7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71790A852A821B92002BDF0B /* Extensions */,
+				71E583DB2A811DDB0039880B /* Elements */,
 				71EC1E4F2A80B34A00EE1950 /* TransitionAnimators */,
 				71E3EC6E2A7F9BE100A24D7F /* SelfExtractor */,
 				71E3EC6B2A7F9B8C00A24D7F /* Publisher + Subscriber */,
@@ -444,6 +474,14 @@
 			path = Training;
 			sourceTree = "<group>";
 		};
+		71E583DB2A811DDB0039880B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				71790A892A821C46002BDF0B /* Buttons */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		71EC1E2F2A80AAE100EE1950 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +645,7 @@
 				71E3ECA32A7FAAF400A24D7F /* AppUILayerType.swift in Sources */,
 				71E3EC6D2A7F9BA500A24D7F /* Publisher + Subscriber.swift in Sources */,
 				71E3EC862A7FA3E500A24D7F /* InitialSceneInteractor.swift in Sources */,
+				71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */,
 				71EC1E402A80AFC300EE1950 /* MainSceneInteractor.swift in Sources */,
 				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
 				71EC1E3D2A80AFC300EE1950 /* MainSceneRouterContract.swift in Sources */,
@@ -614,6 +653,7 @@
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
 				71E3ECBB2A7FB0DF00A24D7F /* Training+CoreDataProperties.swift in Sources */,
 				71E3ECC12A7FB15400A24D7F /* TrainingModel.swift in Sources */,
+				71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */,
 				71EC1E412A80AFC300EE1950 /* MainSceneInteractorService.swift in Sources */,
 				71E3EC872A7FA3E500A24D7F /* InitialSceneInteractorService.swift in Sources */,
 				71E3EC892A7FA3E500A24D7F /* InitialSceneViewModel.swift in Sources */,
