@@ -6,8 +6,12 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainSceneViewModelType { }
+protocol MainSceneViewModelType {
+    func getTrainingListViewModel() -> TrainingListViewModelType
+}
 
 class MainSceneViewModel { }
 
-extension MainSceneViewModel: MainSceneViewModelType { }
+extension MainSceneViewModel: MainSceneViewModelType {
+    func getTrainingListViewModel() -> TrainingListViewModelType { TrainingListViewModel() }
+}

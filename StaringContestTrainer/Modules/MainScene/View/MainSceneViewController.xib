@@ -8,8 +8,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainSceneViewController">
             <connections>
+                <outlet property="listViewTrailingConstraint" destination="n6M-CE-Kjp" id="hxd-ED-V7G"/>
                 <outlet property="sceneTitle" destination="bxU-2E-fKU" id="RYY-NV-w86"/>
                 <outlet property="topPaddingConstraint" destination="l4U-CU-wv2" id="n1R-og-mV4"/>
+                <outlet property="trainingListView" destination="tKq-r4-fT3" id="Idv-0j-ECl"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
             </connections>
         </placeholder>
@@ -62,13 +64,20 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKq-r4-fT3" customClass="TrainingListView" customModule="StaringContestTrainer" customModuleProvider="target">
+                    <rect key="frame" x="-213.5" y="94.5" width="213.5" height="379"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="tKq-r4-fT3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2:3" id="2V1-VX-BPK"/>
+                <constraint firstItem="tKq-r4-fT3" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2:3" id="Owr-yT-ypA"/>
                 <constraint firstItem="zRH-4Z-6La" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yda-UA-P9L"/>
                 <constraint firstAttribute="trailing" secondItem="zRH-4Z-6La" secondAttribute="trailing" id="f4L-ae-8xg"/>
                 <constraint firstItem="zRH-4Z-6La" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l4U-CU-wv2"/>
                 <constraint firstAttribute="bottom" secondItem="zRH-4Z-6La" secondAttribute="bottom" id="n1m-uf-VSF"/>
+                <constraint firstAttribute="leading" secondItem="tKq-r4-fT3" secondAttribute="trailing" id="n6M-CE-Kjp"/>
+                <constraint firstItem="tKq-r4-fT3" firstAttribute="centerY" secondItem="zRH-4Z-6La" secondAttribute="centerY" id="w65-EL-ZD9"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="866.25" y="421.47887323943661"/>

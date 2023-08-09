@@ -18,3 +18,7 @@ protocol AppCoreUILayerType {
 protocol AppCoreCIProcessorLayerType {
     var ciProcessorLayer: AppCIProcessorLayerType { get }
 }
+
+protocol AppCoreCoreDataLayerType {
+    var coreDataLayer: AppCoreDataLayerType { get }
+}

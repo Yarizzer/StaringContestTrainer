@@ -13,6 +13,7 @@ protocol MainScenePresentable {
 struct MainScenePresenterResponse {
 	enum MainSceneResponseType {
 		case initialSetup
+        case showHideListView
 		case drainView
 	}
 }

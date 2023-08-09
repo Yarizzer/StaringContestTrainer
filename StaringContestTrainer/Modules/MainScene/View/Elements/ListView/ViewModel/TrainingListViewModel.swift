@@ -6,13 +6,35 @@
 //
 
 protocol TrainingListViewModelType {
-//    func getCellViewModel() -> TrainingListCellViewmodelType
+    func getCellViewModel(for index: Int) -> TrainingListTableViewCellViewModelType?
 }
 
 class TrainingListViewModel {
+    init() {
+        self.trainingData = AppCore.shared.coreDataLayer.trainingList.value
+    }
     
+    private var trainingData: [TrainingModel]?
 }
 
 extension TrainingListViewModel: TrainingListViewModelType {
+    func getCellViewModel(for index: Int) -> TrainingListTableViewCellViewModelType? {
+        guard let trainingData, trainingData.indices.contains(index) else { return nil }
+        
+        return TrainingListTableViewCellViewModel(with: trainingData[index])
+    }
+}
+
+extension TrainingListViewModel: TableViewProviderViewModel {
+    var numberOfTableSections: Int { Constants.sectionsCount }
     
+    func numberOfTableRowsInSection(_ section: Int) -> Int { trainingData?.count ?? 0 }
+    func heightForRow(atIndex index: Int) -> Float { Constants.rowHeightValue}
+}
+
+extension TrainingListViewModel {
+    private struct Constants {
+        static let sectionsCount = 1
+        static let rowHeightValue: Float = 80.0
+    }
 }

@@ -13,5 +13,6 @@ protocol MainSceneViewControllerType {
 struct MainSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: MainSceneViewModelType)
+        case showHideListView
 	}
 }
