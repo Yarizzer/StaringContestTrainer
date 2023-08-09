@@ -50,7 +50,6 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
     @IBOutlet private weak var listViewTrailingConstraint: NSLayoutConstraint!
     
     @IBOutlet private weak var sceneTitle: UILabel!
-    
     @IBOutlet private weak var trainingListView: TrainingListView!
 }
 

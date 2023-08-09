@@ -6,6 +6,9 @@
 //
 
 protocol TrainingListViewModelType {
+    //MARK: - Publishers
+    var needToShowListButton: Publisher<Bool?> { get }
+    
     func getCellViewModel(for index: Int) -> TrainingListTableViewCellViewModelType?
 }
 
@@ -14,7 +17,19 @@ class TrainingListViewModel {
         self.trainingData = AppCore.shared.coreDataLayer.trainingList.value
     }
     
-    private var trainingData: [TrainingModel]?
+    private var trainingData: [TrainingModel]? {
+        didSet {
+            guard let trainingData else {
+                needToShowListButton.value = false
+                return
+            }
+            
+            needToShowListButton.value = !trainingData.isEmpty
+        }
+    }
+    
+    //MARK: - Publishers
+    var needToShowListButton: Publisher<Bool?> = Publisher(nil)
 }
 
 extension TrainingListViewModel: TrainingListViewModelType {
