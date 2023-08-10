@@ -14,6 +14,8 @@ struct MainScenePresenterResponse {
 	enum MainSceneResponseType {
 		case initialSetup
         case showHideListView
+        case viewIsReady
+        case viewWillDisappear
 		case drainView
 	}
 }

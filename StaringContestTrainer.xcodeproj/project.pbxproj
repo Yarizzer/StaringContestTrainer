@@ -17,6 +17,10 @@
 		71790A972A824EB7002BDF0B /* TableViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A962A824EB7002BDF0B /* TableViewProviderViewModel.swift */; };
 		71790A992A824EDF002BDF0B /* TableViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A982A824EDF002BDF0B /* TableViewProviderType.swift */; };
 		71790A9B2A825090002BDF0B /* TrainingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A9A2A825090002BDF0B /* TrainingListViewModel.swift */; };
+		718339492A84C395001712EF /* CaptureViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718339482A84C395001712EF /* CaptureViewContract.swift */; };
+		7183394B2A84C3C2001712EF /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183394A2A84C3C2001712EF /* CaptureView.swift */; };
+		7183394D2A84C792001712EF /* CaptureViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183394C2A84C792001712EF /* CaptureViewModelType.swift */; };
+		7183394F2A84C7BA001712EF /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183394E2A84C7BA001712EF /* CaptureViewModel.swift */; };
 		71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC492A7F971600A24D7F /* AppDelegate.swift */; };
 		71E3EC542A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E3EC522A7F971600A24D7F /* StaringContestTrainer.xcdatamodeld */; };
 		71E3EC562A7F971700A24D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3EC552A7F971700A24D7F /* Assets.xcassets */; };
@@ -80,6 +84,10 @@
 		71790A962A824EB7002BDF0B /* TableViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderViewModel.swift; sourceTree = "<group>"; };
 		71790A982A824EDF002BDF0B /* TableViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderType.swift; sourceTree = "<group>"; };
 		71790A9A2A825090002BDF0B /* TrainingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListViewModel.swift; sourceTree = "<group>"; };
+		718339482A84C395001712EF /* CaptureViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewContract.swift; sourceTree = "<group>"; };
+		7183394A2A84C3C2001712EF /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		7183394C2A84C792001712EF /* CaptureViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModelType.swift; sourceTree = "<group>"; };
+		7183394E2A84C7BA001712EF /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
 		71E3EC462A7F971600A24D7F /* StaringContestTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaringContestTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E3EC492A7F971600A24D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E3EC532A7F971600A24D7F /* StaringContestTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaringContestTrainer.xcdatamodel; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 		71790A8C2A824D41002BDF0B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				718339452A84C35D001712EF /* CaptureView */,
 				71790A8D2A824D4B002BDF0B /* ListView */,
 			);
 			path = Elements;
@@ -253,6 +262,33 @@
 				71790A982A824EDF002BDF0B /* TableViewProviderType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		718339452A84C35D001712EF /* CaptureView */ = {
+			isa = PBXGroup;
+			children = (
+				718339472A84C378001712EF /* ViewModel */,
+				718339462A84C372001712EF /* View */,
+			);
+			path = CaptureView;
+			sourceTree = "<group>";
+		};
+		718339462A84C372001712EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7183394A2A84C3C2001712EF /* CaptureView.swift */,
+				718339482A84C395001712EF /* CaptureViewContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		718339472A84C378001712EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7183394E2A84C7BA001712EF /* CaptureViewModel.swift */,
+				7183394C2A84C792001712EF /* CaptureViewModelType.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		71E3EC3D2A7F971600A24D7F = {
@@ -755,6 +791,7 @@
 				71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */,
 				71EC1E402A80AFC300EE1950 /* MainSceneInteractor.swift in Sources */,
 				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
+				7183394D2A84C792001712EF /* CaptureViewModelType.swift in Sources */,
 				71EC1E3D2A80AFC300EE1950 /* MainSceneRouterContract.swift in Sources */,
 				71E3EC742A7F9CA100A24D7F /* NibLoadable.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
@@ -762,6 +799,7 @@
 				71E3ECC12A7FB15400A24D7F /* TrainingModel.swift in Sources */,
 				71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */,
 				71EC1E412A80AFC300EE1950 /* MainSceneInteractorService.swift in Sources */,
+				7183394B2A84C3C2001712EF /* CaptureView.swift in Sources */,
 				71E3EC872A7FA3E500A24D7F /* InitialSceneInteractorService.swift in Sources */,
 				71E3EC892A7FA3E500A24D7F /* InitialSceneViewModel.swift in Sources */,
 				71790A992A824EDF002BDF0B /* TableViewProviderType.swift in Sources */,
@@ -783,7 +821,9 @@
 				71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */,
 				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
 				71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */,
+				718339492A84C395001712EF /* CaptureViewContract.swift in Sources */,
 				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
+				7183394F2A84C7BA001712EF /* CaptureViewModel.swift in Sources */,
 				71E3ECBA2A7FB0DF00A24D7F /* Training+CoreDataClass.swift in Sources */,
 				71E3EC852A7FA3E500A24D7F /* InitialSceneViewController.swift in Sources */,
 				71EC1E3E2A80AFC300EE1950 /* MainSceneRouter.swift in Sources */,

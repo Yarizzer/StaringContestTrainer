@@ -14,5 +14,7 @@ struct MainSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
         case showHideListView
+        case viewIsReady
+        case viewWillDisappear
 	}
 }

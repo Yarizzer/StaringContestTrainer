@@ -14,5 +14,7 @@ struct MainSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: MainSceneViewModelType)
         case showHideListView
+        case viewIsReady
+        case viewWillDisappear
 	}
 }

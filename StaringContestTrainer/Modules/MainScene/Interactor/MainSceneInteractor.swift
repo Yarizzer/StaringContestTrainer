@@ -23,6 +23,8 @@ extension MainSceneInteractor: MainSceneInteractable {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
         case .showHideListView: presenter.response(responseType: .showHideListView)
+        case .viewIsReady: presenter.response(responseType: .viewIsReady)
+        case .viewWillDisappear: presenter.response(responseType: .viewWillDisappear)
 		}
 	}
 }

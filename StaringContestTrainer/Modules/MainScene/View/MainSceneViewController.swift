@@ -25,9 +25,14 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
             sSelf.topPaddingConstraint.constant -= Constants.topConstraintExtraValue
             sSelf.view.layoutIfNeeded()
         }, completion: extractSelf { sSelf, _ in
-            writeLog(type: .info, message: "View has been prepared")
-//            sSelf.interactor?.makeRequest(requestType: .viewIsReady)
+            sSelf.interactor?.makeRequest(requestType: .viewIsReady)
         })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        interactor?.makeRequest(requestType: .viewWillDisappear)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -51,6 +56,8 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
     
     @IBOutlet private weak var sceneTitle: UILabel!
     @IBOutlet private weak var trainingListView: TrainingListView!
+    
+    @IBOutlet private weak var captureView: CaptureView!
 }
 
 extension MainSceneViewController: MainSceneViewControllerType {
@@ -66,7 +73,8 @@ extension MainSceneViewController: MainSceneViewControllerType {
                 
                 sSelf.view.layoutIfNeeded()
             })
-            
+        case .viewIsReady: captureView.awakeSession()
+        case .viewWillDisappear: captureView.sleepSession()
 		}
 	}
 }
