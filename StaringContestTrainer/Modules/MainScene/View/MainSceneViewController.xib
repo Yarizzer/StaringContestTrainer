@@ -25,6 +25,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-4Z-6La" userLabel="Back View">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JD-G4-ZtA" customClass="CaptureView" customModule="StaringContestTrainer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0S-sf-IKf" userLabel="Header View">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                             <subviews>
@@ -54,10 +58,6 @@
                                 <constraint firstItem="m7a-0g-3W6" firstAttribute="height" secondItem="F0S-sf-IKf" secondAttribute="height" multiplier="4:5" id="ngt-l3-eMR"/>
                                 <constraint firstItem="m7a-0g-3W6" firstAttribute="leading" secondItem="F0S-sf-IKf" secondAttribute="leading" constant="10" id="ovN-vp-yNg"/>
                             </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JD-G4-ZtA" customClass="CaptureView" customModule="StaringContestTrainer" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
