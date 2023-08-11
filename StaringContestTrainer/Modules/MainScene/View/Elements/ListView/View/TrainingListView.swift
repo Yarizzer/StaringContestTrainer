@@ -37,8 +37,6 @@ class TrainingListView: UIView {
         
         guard let canvas, let tableView else { return }
         
-        #warning("setting up table view here and other views")
-        
         canvas.addSubview(tableView)
         
         addSubview(canvas)
