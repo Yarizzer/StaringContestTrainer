@@ -30,10 +30,10 @@ class CaptureView: UIView {
         
         guard let canvas, let videoPreviewLayer else { return }
         
-//        canvas.layer.cornerRadius = Constants.cornerRadiusValue
-//        canvas.layer.masksToBounds = true
-//        
-//        videoPreviewLayer.frame = canvas.layer.bounds
+        canvas.layer.cornerRadius = Constants.cornerRadiusValue
+        canvas.layer.masksToBounds = true
+        
+        videoPreviewLayer.frame = canvas.layer.bounds
     }
     
     private func initialSetup() {
