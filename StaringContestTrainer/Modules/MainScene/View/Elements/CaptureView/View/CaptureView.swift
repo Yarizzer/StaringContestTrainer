@@ -30,9 +30,6 @@ class CaptureView: UIView {
         
         guard let canvas, let videoPreviewLayer else { return }
         
-//        canvas.layer.cornerRadius = Constants.cornerRadiusValue
-//        canvas.layer.masksToBounds = true
-//        
         videoPreviewLayer.frame = canvas.layer.bounds
     }
     
@@ -58,7 +55,7 @@ class CaptureView: UIView {
     private func configureSession() {
         session = AVCaptureSession()
         
-        guard let canvas, let session, let device = AVCaptureDevice.default(for: .video) else { return }
+        guard let canvas, let session, let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return }
         
         do {
             let input = try AVCaptureDeviceInput(device: device)
@@ -126,6 +123,6 @@ extension CaptureView {
         
         static let elementsPadding: CGFloat = 10.0
         static let queueImageRecognitionLabel = "imageCapture.queue"
-        static let allowedImageDrawRect: CGRect = CGRect(x: 0.0, y: 0.0, width: 224.0, height: 224.0)
+//        static let allowedImageDrawRect: CGRect = CGRect(x: 0.0, y: 0.0, width: 224.0, height: 224.0)
     }
 }
