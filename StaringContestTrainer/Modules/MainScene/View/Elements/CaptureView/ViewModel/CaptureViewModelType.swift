@@ -5,8 +5,8 @@
 //  Created by Yaroslav Abaturov on 10.08.2023.
 //
 
-import AVFoundation
+import CoreImage
 
 protocol CaptureViewModelType {
-    func updatePrediction(for image: CVPixelBuffer)
+    func check(image: CIImage)
 }

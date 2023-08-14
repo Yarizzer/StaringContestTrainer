@@ -5,10 +5,10 @@
 //  Created by Yaroslav Abaturov on 10.08.2023.
 //
 
-import AVFoundation
+import CoreImage
 
 class CaptureViewModel: CaptureViewModelType {
-    func updatePrediction(for image: CVPixelBuffer) {
-//        AppCore.shared.mlLayer.updatePrediction(for: image)
+    func check(image: CIImage) {
+        print(image.extent.size)
     }
 }

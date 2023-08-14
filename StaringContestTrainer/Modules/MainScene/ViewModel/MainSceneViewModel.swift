@@ -8,10 +8,12 @@
 
 protocol MainSceneViewModelType {
     func getTrainingListViewModel() -> TrainingListViewModelType
+    func getCaptureViewModel() -> CaptureViewModelType
 }
 
 class MainSceneViewModel { }
 
 extension MainSceneViewModel: MainSceneViewModelType {
     func getTrainingListViewModel() -> TrainingListViewModelType { TrainingListViewModel() }
+    func getCaptureViewModel() -> CaptureViewModelType { CaptureViewModel() }
 }

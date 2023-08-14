@@ -33,7 +33,7 @@ class CaptureView: UIView {
 //        canvas.layer.cornerRadius = Constants.cornerRadiusValue
 //        canvas.layer.masksToBounds = true
 //        
-//        videoPreviewLayer.frame = canvas.layer.bounds
+        videoPreviewLayer.frame = canvas.layer.bounds
     }
     
     private func initialSetup() {
@@ -81,7 +81,7 @@ class CaptureView: UIView {
         canvas.layer.addSublayer(videoPreviewLayer)
     }
     
-    func inject(model: CaptureViewModelType) {
+    func setup(with model: CaptureViewModelType) {
         self.viewModel = model
     }
     
@@ -115,54 +115,8 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         connection.videoOrientation = .portrait
         
         guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        
-        let ciImage = CIImage(cvImageBuffer: imageBuffer)
-        
-        let image = UIImage(ciImage: ciImage)
-        
-        //MARK: - Begin context
-        UIGraphicsBeginImageContext(Constants.allowedImageDrawRect.size)
-        
-        image.draw(in: Constants.allowedImageDrawRect)
-        guard let resizedImage = UIGraphicsGetImageFromCurrentImageContext() else { return }
-        
-        UIGraphicsEndImageContext()
-        //MARK: - End context
-        
-        let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
-             kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
-        
-        var pixelBuffer: CVPixelBuffer?
-        
-        CVPixelBufferCreate(kCFAllocatorDefault, Int(resizedImage.size.width), Int(resizedImage.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
-        
-        guard let pixelBuffer else { return }
-        
-        CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
-        let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer)
-        let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
-        let context = CGContext(data: pixelData,
-                                width: Int(resizedImage.size.width),
-                                height: Int(resizedImage.size.height),
-                                bitsPerComponent: 8,
-                                bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer),
-                                space: rgbColorSpace,
-                                bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
-        
-        context?.translateBy(x: 0, y: resizedImage.size.height)
-        context?.scaleBy(x: 1, y: -1)
-        
-        guard let context else { return }
-        
-        UIGraphicsPushContext(context)
-        
-        resizedImage.draw(in: CGRect(x: 0.0, y: 0.0, width: resizedImage.size.width, height: resizedImage.size.height))
-        
-        UIGraphicsPopContext()
-        
-        CVPixelBufferUnlockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
-        
-        viewModel?.updatePrediction(for: pixelBuffer)
+
+        viewModel?.check(image: CIImage(cvImageBuffer: imageBuffer))
     }
 }
 

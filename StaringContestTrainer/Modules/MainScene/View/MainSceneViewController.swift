@@ -64,6 +64,7 @@ extension MainSceneViewController: MainSceneViewControllerType {
 		switch viewModelDataType {
 		case .initialSetup(let model):
             trainingListView.setup(with: model.getTrainingListViewModel())
+            captureView.setup(with: model.getCaptureViewModel())
         case .showHideListView:
             view.layoutIfNeeded()
             
