@@ -5,6 +5,11 @@
 //  Created by Yaroslav Abaturov on 6.08.2023.
 //
 
+import CoreImage
+
 protocol AppCIProcessorLayerType {
-    func process()
+    //MARK: - Session
+    func prepareSession()
+    
+    func process(image ciImage: CIImage)
 }

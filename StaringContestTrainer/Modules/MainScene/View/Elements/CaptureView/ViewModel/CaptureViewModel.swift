@@ -9,6 +9,6 @@ import CoreImage
 
 class CaptureViewModel: CaptureViewModelType {
     func check(image: CIImage) {
-        print(image.extent.size)
+        AppCore.shared.ciProcessorLayer.process(image: image)
     }
 }

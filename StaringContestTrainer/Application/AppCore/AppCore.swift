@@ -22,6 +22,7 @@ class AppCore {
 extension AppCore: AppCoreSessionType {
     func prepareSession(completion: @escaping (Bool) -> ()) {
         appCoreDataL.prepareSession()
+        appCIL.prepareSession()
         
         completion(true)
     }
