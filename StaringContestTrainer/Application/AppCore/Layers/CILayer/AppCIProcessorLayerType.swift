@@ -10,12 +10,6 @@ import CoreImage
 protocol AppCIProcessorLayerType {
     //MARK: - Session
     func prepareSession()
-    func closeSession()
-    //MARK: - Publishers
-    var state: Publisher<CIProcessSessionState?> { get }
-    
-    func start()
-    
-    func getFinalImageData() -> CIImage?
-    func process(image ciImage: CIImage)
+    //MARK: - Func's
+    func process(image ciImage: CIImage) -> Bool
 }

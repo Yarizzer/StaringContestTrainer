@@ -10,7 +10,6 @@
 		7125AFF02A829DBA0048EC0A /* TrainingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */; };
 		7125AFF12A829DBA0048EC0A /* TrainingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */; };
 		7125AFF32A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */; };
-		7157AE7B2A8A638B0054C5C9 /* CIProcessLayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157AE7A2A8A638B0054C5C9 /* CIProcessLayerContract.swift */; };
 		71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */; };
 		71790A8B2A821C5C002BDF0B /* ShowListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A8A2A821C5C002BDF0B /* ShowListButton.swift */; };
 		71790A912A824DAF002BDF0B /* TrainingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71790A902A824DAF002BDF0B /* TrainingListView.swift */; };
@@ -78,7 +77,6 @@
 		7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCell.swift; sourceTree = "<group>"; };
 		7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingListTableViewCell.xib; sourceTree = "<group>"; };
 		7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		7157AE7A2A8A638B0054C5C9 /* CIProcessLayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIProcessLayerContract.swift; sourceTree = "<group>"; };
 		71790A872A821BAE002BDF0B /* NSObject + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extensions.swift"; sourceTree = "<group>"; };
 		71790A8A2A821C5C002BDF0B /* ShowListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListButton.swift; sourceTree = "<group>"; };
 		71790A902A824DAF002BDF0B /* TrainingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListView.swift; sourceTree = "<group>"; };
@@ -541,7 +539,6 @@
 			children = (
 				71E3ECAF2A7FACBA00A24D7F /* AppCIProcessorLayer.swift */,
 				71E3ECB12A7FAD1000A24D7F /* AppCIProcessorLayerType.swift */,
-				7157AE7A2A8A638B0054C5C9 /* CIProcessLayerContract.swift */,
 			);
 			path = CILayer;
 			sourceTree = "<group>";
@@ -798,7 +795,6 @@
 				71EC1E3D2A80AFC300EE1950 /* MainSceneRouterContract.swift in Sources */,
 				71E3EC742A7F9CA100A24D7F /* NibLoadable.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
-				7157AE7B2A8A638B0054C5C9 /* CIProcessLayerContract.swift in Sources */,
 				71E3ECBB2A7FB0DF00A24D7F /* Training+CoreDataProperties.swift in Sources */,
 				71E3ECC12A7FB15400A24D7F /* TrainingModel.swift in Sources */,
 				71790A882A821BAE002BDF0B /* NSObject + Extensions.swift in Sources */,

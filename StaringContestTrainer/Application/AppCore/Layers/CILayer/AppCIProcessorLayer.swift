@@ -8,11 +8,7 @@
 import CoreImage
 
 class AppCIProcessorLayer {
-    //MARK: - Publishers
-    var state: Publisher<CIProcessSessionState?> = Publisher(nil)
-    
     private var faceDetector: CIDetector?
-    private var finalImage: CIImage?
 }
 
 extension AppCIProcessorLayer: AppCIProcessorLayerType {
@@ -20,36 +16,21 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
     func prepareSession() {
         faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: Constants.accuracy)
     }
-    func closeSession() {
-        state.value = .finished
-    }
-    
-    func start() {
-        state.value = .started
-    }
-
-    func getFinalImageData() -> CIImage? { finalImage }
-    
-    func process(image: CIImage) {
-        guard let detector = faceDetector else { return }
+    //MARK: - Func's
+    func process(image: CIImage) -> Bool {
+        guard let detector = faceDetector else { return true }
         
         let faces = detector.features(in: image, options: [CIDetectorEyeBlink: true])
         
-        for face in faces {
-            guard let faceAsFeature = face as? CIFaceFeature else { return }
-            
-            var needToFinish = faceAsFeature.leftEyeClosed || faceAsFeature.rightEyeClosed
-            
-            if needToFinish {
-                finalImage = image
-                state.value = .finished
-            }
-        }
+        guard faces.indices.contains(Constants.firstFaceIndex), let firstFace = faces[Constants.firstFaceIndex] as? CIFaceFeature else { return true }
+        
+        return firstFace.leftEyeClosed || firstFace.rightEyeClosed
     }
 }
 
 extension AppCIProcessorLayer {
     private struct Constants {
         static let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh, CIDetectorTracking: true] as [String: Any]
+        static let firstFaceIndex = 0
     }
 }
