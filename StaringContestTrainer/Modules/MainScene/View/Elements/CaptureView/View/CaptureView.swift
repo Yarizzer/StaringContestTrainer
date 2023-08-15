@@ -121,9 +121,9 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         connection.videoOrientation = .portrait
         
         guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-
-        print(#function)
         
+        print(#function)
+
         viewModel?.check(image: CIImage(cvImageBuffer: imageBuffer))
     }
 }
@@ -131,7 +131,6 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
 extension CaptureView {
     private struct Constants {
         static let cornerRadiusValue: CGFloat = 30.0
-        
         static let elementsPadding: CGFloat = 10.0
         static let queueImageRecognitionLabel = "imageCapture.queue"
     }

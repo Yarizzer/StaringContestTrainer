@@ -8,5 +8,10 @@
 import CoreImage
 
 protocol CaptureViewModelType {
+    //MARK: - Subscription
+    func subscribe()
+    
+    //MARK: - func's
+    func start()
     func check(image: CIImage)
 }

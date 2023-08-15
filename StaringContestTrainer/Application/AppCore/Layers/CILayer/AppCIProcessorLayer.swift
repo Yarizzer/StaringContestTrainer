@@ -8,7 +8,11 @@
 import CoreImage
 
 class AppCIProcessorLayer {
+    //MARK: - Publishers
+    var state: Publisher<CIProcessSessionState?> = Publisher(nil)
+    
     private var faceDetector: CIDetector?
+    private var finalImage: CIImage?
 }
 
 extension AppCIProcessorLayer: AppCIProcessorLayerType {
@@ -16,7 +20,15 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
     func prepareSession() {
         faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: Constants.accuracy)
     }
+    func closeSession() {
+        state.value = .finished
+    }
+    
+    func start() {
+        state.value = .started
+    }
 
+    func getFinalImageData() -> CIImage? { finalImage }
     
     func process(image: CIImage) {
         guard let detector = faceDetector else { return }
@@ -26,13 +38,18 @@ extension AppCIProcessorLayer: AppCIProcessorLayerType {
         for face in faces {
             guard let faceAsFeature = face as? CIFaceFeature else { return }
             
-            print("left eye is \(faceAsFeature.leftEyeClosed ? "closed" : "opened")")
+            var needToFinish = faceAsFeature.leftEyeClosed || faceAsFeature.rightEyeClosed
+            
+            if needToFinish {
+                finalImage = image
+                state.value = .finished
+            }
         }
     }
 }
 
 extension AppCIProcessorLayer {
     private struct Constants {
-        static let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+        static let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh, CIDetectorTracking: true] as [String: Any]
     }
 }
