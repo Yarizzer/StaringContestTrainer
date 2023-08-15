@@ -121,8 +121,6 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         connection.videoOrientation = .portrait
         
         guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        
-        print(#function)
 
         viewModel?.check(image: CIImage(cvImageBuffer: imageBuffer))
     }
