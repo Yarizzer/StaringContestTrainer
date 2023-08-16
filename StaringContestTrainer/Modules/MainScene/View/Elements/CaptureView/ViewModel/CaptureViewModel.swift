@@ -7,7 +7,9 @@
 
 import CoreImage
 
-class CaptureViewModel { }
+class CaptureViewModel {
+    
+}
 
 extension CaptureViewModel: CaptureViewModelType {
     //MARK: - func

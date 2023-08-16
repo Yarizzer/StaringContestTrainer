@@ -58,15 +58,6 @@ class CaptureView: UIView {
         guard let canvas, let session, let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return }
         
         do {
-            try device.lockForConfiguration()
-            device.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
-            device.activeVideoMaxFrameDuration = CMTimeMake(value: 1, timescale: 30)
-            device.unlockForConfiguration()
-        } catch {
-            writeLog(type: .error, message: "Device configuration failed")
-        }
-        
-        do {
             let input = try AVCaptureDeviceInput(device: device)
             let output = AVCaptureVideoDataOutput()
             output.setSampleBufferDelegate(self, queue: DispatchQueue(label: Constants.queueImageRecognitionLabel))
