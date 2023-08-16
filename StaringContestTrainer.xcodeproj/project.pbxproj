@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711D25F42A8CA06600BA216C /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D25F32A8CA06600BA216C /* StartButton.swift */; };
+		711D25F62A8CA17C00BA216C /* StartButtonViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D25F52A8CA17C00BA216C /* StartButtonViewModelType.swift */; };
+		711D25F82A8CA19000BA216C /* StartButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D25F72A8CA19000BA216C /* StartButtonViewModel.swift */; };
 		7125AFF02A829DBA0048EC0A /* TrainingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */; };
 		7125AFF12A829DBA0048EC0A /* TrainingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */; };
 		7125AFF32A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */; };
@@ -74,6 +77,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711D25F32A8CA06600BA216C /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		711D25F52A8CA17C00BA216C /* StartButtonViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonViewModelType.swift; sourceTree = "<group>"; };
+		711D25F72A8CA19000BA216C /* StartButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonViewModel.swift; sourceTree = "<group>"; };
 		7125AFEE2A829DBA0048EC0A /* TrainingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCell.swift; sourceTree = "<group>"; };
 		7125AFEF2A829DBA0048EC0A /* TrainingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingListTableViewCell.xib; sourceTree = "<group>"; };
 		7125AFF22A829DCE0048EC0A /* TrainingListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingListTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +159,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711D25F02A8CA03400BA216C /* StartButton */ = {
+			isa = PBXGroup;
+			children = (
+				711D25F22A8CA04800BA216C /* ViewModel */,
+				711D25F12A8CA04200BA216C /* View */,
+			);
+			path = StartButton;
+			sourceTree = "<group>";
+		};
+		711D25F12A8CA04200BA216C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				711D25F32A8CA06600BA216C /* StartButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		711D25F22A8CA04800BA216C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				711D25F72A8CA19000BA216C /* StartButtonViewModel.swift */,
+				711D25F52A8CA17C00BA216C /* StartButtonViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7125AFEA2A829D790048EC0A /* Elements */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +246,7 @@
 		71790A8C2A824D41002BDF0B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				711D25F02A8CA03400BA216C /* StartButton */,
 				718339452A84C35D001712EF /* CaptureView */,
 				71790A8D2A824D4B002BDF0B /* ListView */,
 			);
@@ -792,6 +825,7 @@
 				71EC1E402A80AFC300EE1950 /* MainSceneInteractor.swift in Sources */,
 				71E3EC9C2A7FA68100A24D7F /* Logger.swift in Sources */,
 				7183394D2A84C792001712EF /* CaptureViewModelType.swift in Sources */,
+				711D25F62A8CA17C00BA216C /* StartButtonViewModelType.swift in Sources */,
 				71EC1E3D2A80AFC300EE1950 /* MainSceneRouterContract.swift in Sources */,
 				71E3EC742A7F9CA100A24D7F /* NibLoadable.swift in Sources */,
 				71E3EC4A2A7F971600A24D7F /* AppDelegate.swift in Sources */,
@@ -806,6 +840,7 @@
 				71E3EC8B2A7FA3E500A24D7F /* InitialSceneViewControllerContract.swift in Sources */,
 				71E3EC832A7FA3E500A24D7F /* InitialSceneRouterContract.swift in Sources */,
 				71E3EC8D2A7FA3E500A24D7F /* InitialScenePresenterService.swift in Sources */,
+				711D25F82A8CA19000BA216C /* StartButtonViewModel.swift in Sources */,
 				71EC1E462A80AFC300EE1950 /* MainScenePresenterContract.swift in Sources */,
 				71EC1E422A80AFC300EE1950 /* MainSceneInteractorContract.swift in Sources */,
 				71E3ECB72A7FAF9C00A24D7F /* AppCoreDataLayerType.swift in Sources */,
@@ -820,6 +855,7 @@
 				71E3ECB22A7FAD1000A24D7F /* AppCIProcessorLayerType.swift in Sources */,
 				71E3ECAA2A7FAB7700A24D7F /* AppUILayerStyleWorkerType.swift in Sources */,
 				71E3ECA12A7FAAB700A24D7F /* AppUILayer.swift in Sources */,
+				711D25F42A8CA06600BA216C /* StartButton.swift in Sources */,
 				71E3ECB02A7FACBA00A24D7F /* AppCIProcessorLayer.swift in Sources */,
 				718339492A84C395001712EF /* CaptureViewContract.swift in Sources */,
 				71E3EC992A7FA62700A24D7F /* AppCore.swift in Sources */,
