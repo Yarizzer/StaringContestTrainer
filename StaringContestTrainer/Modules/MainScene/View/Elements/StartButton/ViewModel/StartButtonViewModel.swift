@@ -6,23 +6,18 @@
 //
 
 class StartButtonViewModel {
-    
-    //MARK: - Publisher's
-    var didChangedState: Publisher<Bool?> = Publisher(nil)
-    
-    private var state: StartButtonCountdownState? {
-        didSet {
-            didChangedState.value = true
-        }
+    init() {
+        runtimeState = Publisher(Constants.initialStateValue)
     }
+    //MARK: - Publisher's
+    var runtimeState: Publisher<Bool>
 }
 
 extension StartButtonViewModel: StartButtonViewModelType {
-    var countDownState: StartButtonCountdownState? { state }
     var title: String { Constants.titleValue }
     
     func switchState() {
-        state = true
+        runtimeState.value.toggle()
     }
 }
 
@@ -30,5 +25,6 @@ extension StartButtonViewModel {
     private struct Constants {
         static let titleValue = "Start"
         static let countDownValue: Double = 3.0
+        static let initialStateValue = false
     }
 }

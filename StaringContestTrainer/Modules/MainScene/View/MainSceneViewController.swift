@@ -51,12 +51,17 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
         interactor?.makeRequest(requestType: .showHideListView)
     }
     
+    @IBAction private func startButtonAction(_ sender: StartButton) {
+        interactor?.makeRequest(requestType: .startButtonDidTapped)
+    }
+    
     @IBOutlet private weak var topPaddingConstraint: NSLayoutConstraint!
     @IBOutlet private weak var listViewTrailingConstraint: NSLayoutConstraint!
     
     @IBOutlet private weak var sceneTitle: UILabel!
     @IBOutlet private weak var trainingListView: TrainingListView!
     @IBOutlet private weak var captureView: CaptureView!
+    @IBOutlet private weak var startButton: StartButton!
 }
 
 extension MainSceneViewController: MainSceneViewControllerType {
@@ -65,6 +70,7 @@ extension MainSceneViewController: MainSceneViewControllerType {
 		case .initialSetup(let model):
             trainingListView.setup(with: model.getTrainingListViewModel())
             captureView.setup(with: model.getCaptureViewModel())
+            startButton.setup(with: model.getStartButtonViewModel())
         case .showHideListView:
             view.layoutIfNeeded()
             

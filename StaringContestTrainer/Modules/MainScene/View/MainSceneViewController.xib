@@ -12,6 +12,7 @@
                 <outlet property="captureView" destination="3JD-G4-ZtA" id="T2k-ul-g2o"/>
                 <outlet property="listViewTrailingConstraint" destination="n6M-CE-Kjp" id="hxd-ED-V7G"/>
                 <outlet property="sceneTitle" destination="bxU-2E-fKU" id="RYY-NV-w86"/>
+                <outlet property="startButton" destination="ebS-dE-gSv" id="0JA-8i-jzY"/>
                 <outlet property="topPaddingConstraint" destination="l4U-CU-wv2" id="n1R-og-mV4"/>
                 <outlet property="trainingListView" destination="tKq-r4-fT3" id="Idv-0j-ECl"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
@@ -59,14 +60,26 @@
                                 <constraint firstItem="m7a-0g-3W6" firstAttribute="leading" secondItem="F0S-sf-IKf" secondAttribute="leading" constant="10" id="ovN-vp-yNg"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-dE-gSv" customClass="StartButton" customModule="StaringContestTrainer" customModuleProvider="target">
+                            <rect key="frame" x="40" y="500" width="240" height="38"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="startButtonAction:" destination="-1" eventType="touchUpInside" id="Q3f-CK-vHs"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="ebS-dE-gSv" firstAttribute="centerX" secondItem="zRH-4Z-6La" secondAttribute="centerX" id="9A9-2Q-nVx"/>
                         <constraint firstItem="3JD-G4-ZtA" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="Bib-3O-LVY"/>
                         <constraint firstItem="3JD-G4-ZtA" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="FJJ-IJ-67k"/>
                         <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="T95-C2-kf9"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="zRH-4Z-6La" secondAttribute="top" id="VHM-NN-eqW"/>
+                        <constraint firstItem="ebS-dE-gSv" firstAttribute="width" secondItem="zRH-4Z-6La" secondAttribute="width" multiplier="3:4" id="btp-Ic-vUT"/>
                         <constraint firstAttribute="bottom" secondItem="3JD-G4-ZtA" secondAttribute="bottom" id="dFc-PT-Whj"/>
+                        <constraint firstAttribute="bottom" secondItem="ebS-dE-gSv" secondAttribute="bottom" constant="30" id="fan-ib-bjT"/>
+                        <constraint firstItem="ebS-dE-gSv" firstAttribute="height" secondItem="zRH-4Z-6La" secondAttribute="height" multiplier="1:15" id="h1r-Oj-cU0"/>
                         <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="zRH-4Z-6La" secondAttribute="leading" id="jAA-Jb-VfW"/>
                         <constraint firstAttribute="trailing" secondItem="3JD-G4-ZtA" secondAttribute="trailing" id="mc3-mv-icE"/>
                     </constraints>

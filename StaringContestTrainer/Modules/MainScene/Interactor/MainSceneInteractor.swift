@@ -25,6 +25,7 @@ extension MainSceneInteractor: MainSceneInteractable {
         case .showHideListView: presenter.response(responseType: .showHideListView)
         case .viewIsReady: presenter.response(responseType: .viewIsReady)
         case .viewWillDisappear: presenter.response(responseType: .viewWillDisappear)
+        case .startButtonDidTapped: service.startButtonDidTapped()
 		}
 	}
 }

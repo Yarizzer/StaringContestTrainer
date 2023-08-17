@@ -25,28 +25,18 @@ class StartButton: UIButton {
     }
     
     private func setupView() {
-        self.mainTitle = UILabel()
+        #warning("Initialize view here")
     }
     
     func setup(with model: StartButtonViewModelType) {
         self.model = model
+
+        setTitle(model.title, for: .normal)
         
-        guard let mainTitle else { return }
-        
-        mainTitle.text = model.title
-        
-        model.didChangedState.subscribe(self, closure: extractSelf { sSelf, _ in
-            guard let newState = sSelf.model?.countDownState else { return }
-            
-            switch newState {
-            case .active: writeLog(type: .info, message: "Countdown state did set to active")
-            case .inactive: writeLog(type: .info, message: "Countdown state did set to inactive")
-            }
+        model.runtimeState.subscribe(self, closure: extractSelf { sSelf, data in
+            print("Countdown state did set to \(data.newValue ? "active" : "inactive")")
         })
     }
     
-    
     private var model: StartButtonViewModelType?
-    
-    private var mainTitle: UILabel?
 }

@@ -6,7 +6,9 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainSceneInteractorServiceType{ }
+protocol MainSceneInteractorServiceType{
+    func startButtonDidTapped()
+}
 
 class MainSceneInteractorService {
 	init(withModel model: MainSceneViewModelType) {
@@ -16,4 +18,6 @@ class MainSceneInteractorService {
 	private let viewModel: MainSceneViewModelType
 }
 
-extension MainSceneInteractorService: MainSceneInteractorServiceType { }
+extension MainSceneInteractorService: MainSceneInteractorServiceType {
+    func startButtonDidTapped() { viewModel.startButtonDidTapped() }
+}

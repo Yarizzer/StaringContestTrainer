@@ -16,5 +16,6 @@ struct MainSceneInteractorRequest {
         case showHideListView
         case viewIsReady
         case viewWillDisappear
+        case startButtonDidTapped
 	}
 }
