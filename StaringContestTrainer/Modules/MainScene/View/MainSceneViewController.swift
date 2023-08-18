@@ -92,6 +92,6 @@ extension MainSceneViewController {
         static let listViewAD: Double = 0.5
         //Constraints
         static let topConstraintExtraValue: CGFloat = 20.0
-        static let listViewTrailingConstraintExtraValue: CGFloat = -AppCore.shared.uiLayer.device.screenSize.width / 3 * 2 - 10
+        static let listViewTrailingConstraintExtraValue: CGFloat = -AppCore.shared.uiLayer.device.screenSize.width / 3 * 2 - 10.0
 	}
 }
