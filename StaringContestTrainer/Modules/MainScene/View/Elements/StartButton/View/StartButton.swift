@@ -39,4 +39,6 @@ class StartButton: UIButton {
     }
     
     private var model: StartButtonViewModelType?
+    
+    private var indicatorLayer: CAShapeLayer?
 }
