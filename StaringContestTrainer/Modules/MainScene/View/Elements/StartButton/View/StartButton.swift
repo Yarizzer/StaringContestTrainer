@@ -25,7 +25,7 @@ class StartButton: UIButton {
     }
     
     private func setupView() {
-        #warning("Initialize view here")
+        #warning("Setting up propeties here")
     }
     
     func setup(with model: StartButtonViewModelType) {
