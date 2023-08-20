@@ -14,6 +14,6 @@ class CaptureViewModel {
 extension CaptureViewModel: CaptureViewModelType {
     //MARK: - func
     func check(image: CIImage) {
-        print(AppCore.shared.ciProcessorLayer.process(image: image))
+//        print(AppCore.shared.ciProcessorLayer.process(image: image))
     }
 }

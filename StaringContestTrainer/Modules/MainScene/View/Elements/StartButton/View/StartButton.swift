@@ -12,20 +12,32 @@ class StartButton: UIButton {
         super.init(frame: frame)
         
         setupView()
+        
+        print("\(#function) \(bounds)")
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         setupView()
+        
+        print("\(#function) \(bounds)")
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        print("\(#function) \(bounds)")
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        print("\(#function) \(bounds)")
     }
     
     private func setupView() {
-        #warning("Setting up propeties here")
+        #warning("Setting up properties here")
     }
     
     func setup(with model: StartButtonViewModelType) {

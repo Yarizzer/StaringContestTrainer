@@ -34,6 +34,8 @@ class AppUILayerStyleWorker {
             }
         }
     }
+    
+    private let metrics: UIFontMetrics
 }
 
 extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
@@ -47,11 +49,17 @@ extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
     var colorRed: UIColor { StyleColors.red.color }
     var colorGreen: UIColor { StyleColors.green.color }
     var colorOrange: UIColor { StyleColors.orange.color }
+    
     //Fonts
-    var labelTitleFontExtraLarge: UIFont {  Constants.extraLargeFont }
+    var labelTitleFontExtraLarge: UIFont { Constants.extraLargeFont }
     var labelTitleFontLarge: UIFont { Constants.largeFont }
-    var labelTitleFontMedium: UIFont {  Constants.mediumFont }
-    var labelTitleFontSmall: UIFont {  Constants.smallFont }
+    var labelTitleFontMedium: UIFont { Constants.mediumFont }
+    var labelTitleFontSmall: UIFont { Constants.smallFont }
+    func font(with style: UIFont.TextStyle) -> UIFont {
+        let metrics = UIFontMetrics(forTextStyle: style)
+        
+        return metrics.scaledFont(for: Constants.mediumFont)
+    }
     //Layers
     var layerBorderWidth: CGFloat { Constants.layerData.borderWidth }
     var layerLineWidth: CGFloat { Constants.layerData.lineWidth }
