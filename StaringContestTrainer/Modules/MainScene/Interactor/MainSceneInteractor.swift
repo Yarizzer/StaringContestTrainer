@@ -22,10 +22,10 @@ extension MainSceneInteractor: MainSceneInteractable {
 	func makeRequest(requestType: MainSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
-        case .showHideListView: presenter.response(responseType: .showHideListView)
-        case .viewIsReady: presenter.response(responseType: .viewIsReady)
-        case .viewWillDisappear: presenter.response(responseType: .viewWillDisappear)
-        case .startButtonDidTapped: service.startButtonDidTapped()
+    case .showHideListView: presenter.response(responseType: .showHideListView)
+    case .viewIsReady: presenter.response(responseType: .viewIsReady)
+    case .viewWillDisappear: presenter.response(responseType: .viewWillDisappear)
+    case .startButtonDidTapped: service.startButtonDidTapped()
 		}
 	}
 }

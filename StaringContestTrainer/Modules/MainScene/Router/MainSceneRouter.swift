@@ -35,7 +35,7 @@ extension MainSceneRouter: MainSceneRoutable {
 		let interactorService   = MainSceneInteractorService(withModel: viewModel)
 		let interactor          = MainSceneInteractor(withRouter: router, presenter: presenter, service: interactorService)
 		
-        vc.interactor = interactor
+    vc.interactor = interactor
 		router.view = vc
 		
 		guard let view = router.view else {
@@ -47,7 +47,7 @@ extension MainSceneRouter: MainSceneRoutable {
 	
 	func routeTo(scene type: MainSceneRoutableContractData.MainSceneRoutableSceneType) {
 		let vc = prepareDestinationScene(with: type)
-        #warning("uncomment if need to implement custom scene transitioning")
+      #warning("uncomment if need to implement custom scene transitioning")
 //		vc.modalPresentationStyle = .currentContext
 //		vc.transitioningDelegate = view
 		self.view?.present(vc, animated: true)

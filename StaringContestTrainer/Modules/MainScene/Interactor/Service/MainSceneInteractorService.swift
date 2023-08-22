@@ -7,7 +7,7 @@
 //
 
 protocol MainSceneInteractorServiceType{
-    func startButtonDidTapped()
+  func startButtonDidTapped()
 }
 
 class MainSceneInteractorService {
@@ -19,5 +19,5 @@ class MainSceneInteractorService {
 }
 
 extension MainSceneInteractorService: MainSceneInteractorServiceType {
-    func startButtonDidTapped() { viewModel.startButtonDidTapped() }
+  func startButtonDidTapped() { viewModel.startButtonDidTapped() }
 }

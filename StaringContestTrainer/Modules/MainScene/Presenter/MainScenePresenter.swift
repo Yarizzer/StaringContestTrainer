@@ -22,9 +22,9 @@ extension MainScenePresenter: MainScenePresentable {
 		
 		switch responseType {
 		case .initialSetup: viewController?.update(viewModelDataType: .initialSetup(with: model))
-        case .showHideListView: viewController?.update(viewModelDataType: .showHideListView)
-        case .viewIsReady: viewController?.update(viewModelDataType: .viewIsReady)
-        case .viewWillDisappear: viewController?.update(viewModelDataType: .viewWillDisappear)
+    case .showHideListView: viewController?.update(viewModelDataType: .showHideListView)
+    case .viewIsReady: viewController?.update(viewModelDataType: .viewIsReady)
+    case .viewWillDisappear: viewController?.update(viewModelDataType: .viewWillDisappear)
 		case .drainView: viewController = nil
 		}
 	}

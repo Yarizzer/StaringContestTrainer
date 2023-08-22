@@ -16,7 +16,7 @@ protocol InitialSceneRoutable {
 class InitialSceneRouter {
 	private func prepareDestinationScene(with type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType) -> UIViewController {
 		switch type {
-        case .mainScene: return MainSceneRouter.assembly()
+      case .mainScene: return MainSceneRouter.assembly()
 		}
 	}
 	
@@ -33,7 +33,7 @@ extension InitialSceneRouter: InitialSceneRoutable {
 		let interactorService   = InitialSceneInteractorService(withModel: viewModel)
 		let interactor          = InitialSceneInteractor(withRouter: router, presenter: presenter, service: interactorService)
 		
-        vc.interactor = interactor
+    vc.interactor = interactor
 		router.view = vc
 		
 		guard let view = router.view else {
