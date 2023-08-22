@@ -35,7 +35,7 @@ class AppUILayerStyleWorker {
         }
     }
     
-    private let metrics: UIFontMetrics
+//    private let metrics: UIFontMetrics
 }
 
 extension AppUILayerStyleWorker: AppUILayerStyleWorkerType {
