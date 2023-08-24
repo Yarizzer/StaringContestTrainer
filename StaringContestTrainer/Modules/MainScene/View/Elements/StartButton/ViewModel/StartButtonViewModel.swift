@@ -24,7 +24,7 @@ extension StartButtonViewModel: StartButtonViewModelType {
 extension StartButtonViewModel {
   private struct Constants {
     static let titleValue = "Start"
-    static let countDownValue: Double = 3.0
+    static let countDownValue: Double = 5.0
     static let initialStateValue = false
   }
 }
