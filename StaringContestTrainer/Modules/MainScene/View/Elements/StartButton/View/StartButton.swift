@@ -46,7 +46,7 @@ class StartButton: UIButton {
     setTitle(model.title, for: .normal)
 
     model.runtimeState.subscribe(self, closure: extractSelf { sSelf, data in
-      #warning("remove this plug when data is ready")
+      #warning("remove this plug when data is ready.")
       print("Countdown state did set to \(data.newValue ? "active" : "inactive")")
     })
   }
